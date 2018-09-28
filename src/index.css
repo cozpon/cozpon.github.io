@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.main {
+  background-color: #fffdfd;
+  background-color: #f4f7ff;
+  background-image: url(https://i.imgur.com/sqNFfgX.jpg);
+  background-size: fit;
+  height: 800px;
+ }
+
+ .menu {
+  background-color: #fffdfd;
+  background-color: #f4f7ff;
+  background-image: url(https://i.imgur.com/sqNFfgX.jpg);
+  background-position: center;
+  height: 800px;
+ }
+
+ .location {
+  background-color: #fffdfd;
+  background-color: #f4f7ff;
+  background-image: url(https://i.imgur.com/sqNFfgX.jpg);
+  background-position: right;
+  height: 800px;
+ }
+
+
+.header {
+  width: 100%;
+  background-image: linear-gradient(to bottom, #FFAE97, #FFC2B0);
+  background-image: linear-gradient(to bottom, #ffde6f, #ffe799);
+  height: 110px;
+  opacity: .95;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+.nav-links a {
+  text-decoration: none;
+  font-family: 'Notable', sans-serif;
+  font-size: 30px;
+  margin-left: 20px;
+  color: #FFF;
+
+}
+
+/* Header Hover Effect */
+.header-effect a {
+  display: inline-block;
+  overflow: hidden; }
+
+.header-effect a span {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s; }
+
+.header-effect a span::before {
+  position: absolute;
+  top: 100%;
+  content: attr(data-hover);
+  font-weight: 700;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+  @supports (-moz-appearance: none) {
+    .header-effect a span::before {
+      font-weight: 400; } }
+
+.header-effect a:hover span,
+.header-effect a:focus span {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%); }
+
+#main-text {
+  text-align: center;
+  font-size: 55px;
+  font-family: 'Notable', sans-serif;
+  text-shadow: 3px 3px 20px #000000;
+}
+#hours-text {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 2px 3px 12px #FFF;
+}
+
+#menu-text {
+  text-align: center;
+  font-size: 30px;
+  background-color: #fff;
+  width: 50%;
+  opacity: .8;
+  margin-left: 25%;
+  padding: 20px;
+  padding-bottom: 385px;
+}
+#main-text a {
+  text-decoration: none;
+  color: #FFF;
+
+}
+#main-logo {
+  margin-left: 33%;
+  width: 33%;
+  display: flex;
+  background-color: #fff;
+  padding: 1%;
+  opacity: .8;
+}
